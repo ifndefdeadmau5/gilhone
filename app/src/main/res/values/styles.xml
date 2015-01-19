@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="@android:style/Theme.Holo">-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+<!--    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">true</item>
+        &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>-->
+</resources>
