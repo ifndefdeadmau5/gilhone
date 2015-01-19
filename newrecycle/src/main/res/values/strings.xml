@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">NewRecycle</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">RecyclerViewDemo</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+    <string name="selected_count">%1$s selected</string>
     <string-array name="planets_array">
         <item>폐플라스틱</item>
         <item>폐요업</item>
