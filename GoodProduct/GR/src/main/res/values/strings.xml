@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GR 인증</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string-array name="planets_array">
+        <item>폐플라스틱</item>
+        <item>폐요업</item>
+        <item>폐지</item>
+        <item>폐고무</item>
+        <item>폐목재</item>
+        <item>유기성폐기물</item>
+        <item>폐유리</item>
+        <item>폐섬유</item>
+        <item>폐식용유</item>
+        <item>폐금속</item>
+        <item>폐산, 폐알칼리</item>
+        <item>폐유기용제</item>
+        <item>폐수처리오니</item>
+        <item>폐유</item>
+        <item>수산물가공잔재물</item>
+        <item>식물성잔재물</item>
+        <item>폐전지</item>
+    </string-array>
+</resources>

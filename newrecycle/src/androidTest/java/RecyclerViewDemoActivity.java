@@ -21,6 +21,8 @@ import android.view.ViewOutlineProvider;
 import android.view.Window;
 import android.widget.ImageButton;
 
+import com.st.seongmin.newrecycle.R;
+
 import java.util.Date;
 import java.util.List;
 
