@@ -1,4 +1,4 @@
-package com.tekinarslan.material;
+package com.SeongMin.GoodProduct;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

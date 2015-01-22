@@ -1,4 +1,4 @@
-package com.tekinarslan.material.sample;
+package com.SeongMin.GoodProduct.activity;
 
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -15,8 +15,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.SeongMin.GoodProduct.fragment.ViewPagerAdapter;
+import com.SeongMin.GoodProduct.ui.SlidingTabLayout;
 
-public class SampleActivity extends ActionBarActivity {
+
+public class MainActivity extends ActionBarActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle drawerToggle;
@@ -25,6 +28,7 @@ public class SampleActivity extends ActionBarActivity {
 
     private String titles[];// = new String[]{"분야별 목록", "분야별 업체", "뉴스피드", "성민성민"};
     private Toolbar toolbar;
+    private ViewPagerAdapter mAdapter;
 
     // 슬라이딩탭 레이아웃과 뷰페이저는 한 셋트로 사용해
     ViewPager pager;
@@ -35,6 +39,8 @@ public class SampleActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
 
+
+        /* 리소스 아이디로 모든 뷰 얻어옴 */
         titles = getResources().getStringArray(R.array.planets_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.navdra);
@@ -42,14 +48,14 @@ public class SampleActivity extends ActionBarActivity {
         slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        pager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(), titles));
+        pager.setAdapter(mAdapter = new ViewPagerAdapter(getSupportFragmentManager(), titles));
+        //페이저에 뷰페이저 어답터 연결
 
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
             toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
         }
-
 
 
         slidingTabLayout.setViewPager(pager);
@@ -59,15 +65,17 @@ public class SampleActivity extends ActionBarActivity {
                 return Color.WHITE;
             }
         });
-        drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
+        drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawer_close, R.string.drawer_close);
         mDrawerLayout.setDrawerListener(drawerToggle);
         String[] values = new String[]{
-                "업체검색", "즐겨찾기", "분야별보기", "설정"
+                "분야별보기", "인증업체현황", "즐겨찾기", "설정"
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         mDrawerList.setAdapter(adapter);
 
+        slidingTabLayout.setVisibility(View.INVISIBLE);
+        pager.setVisibility(View.INVISIBLE);
         /*서랍
         *       목록
         *               편집
@@ -83,6 +91,9 @@ public class SampleActivity extends ActionBarActivity {
                         mDrawerList.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
                         toolbar.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
                         slidingTabLayout.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+
+                        slidingTabLayout.setVisibility(View.VISIBLE);
+                        pager.setVisibility(View.VISIBLE);
                         mDrawerLayout.closeDrawer(Gravity.START);
                         break;
                     case 1:

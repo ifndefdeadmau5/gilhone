@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimaryDark" />
 
-        <com.tekinarslan.material.sample.SlidingTabLayout
+        <com.SeongMin.GoodProduct.ui.SlidingTabLayout
             android:id="@+id/sliding_tabs"
             android:background="?attr/colorPrimaryDark"
             android:layout_width="match_parent"

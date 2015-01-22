@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tekinarslan.material.sample" >
+    package="com.SeongMin.GoodProduct.activity" >
 
     <!-- 인터넷 권한 추가 -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- 전역 객체 -->
     <application
+        android:name="com.SeongMin.GoodProduct.global.ExcelData"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".SampleActivity"
+            android:name="com.SeongMin.GoodProduct.activity.MainActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.SeongMin.GoodProduct.activity.IntroActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_intro"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

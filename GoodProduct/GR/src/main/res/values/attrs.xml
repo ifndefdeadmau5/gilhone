@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
+
     <declare-styleable name="FloatingActionButton">
         <attr name="fab_colorPressed" format="color" />
         <attr name="fab_colorNormal" format="color" />
         <attr name="fab_colorRipple" format="color" />
         <attr name="fab_shadow" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
 </resources>
