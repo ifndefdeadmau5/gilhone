@@ -1,7 +1,5 @@
 package com.SeongMin.GoodProduct.activity;
 
-import com.SeongMin.GoodProduct.activity.util.SystemUiHider;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import static android.app.PendingIntent.getActivity;
-
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- *
- * @see SystemUiHider
- */
 public class IntroActivity extends Activity {
     Handler handler;
 

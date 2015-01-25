@@ -33,7 +33,6 @@ public class MainActivity extends ActionBarActivity {
     // 슬라이딩탭 레이아웃과 뷰페이저는 한 셋트로 사용해
     ViewPager pager;
     SlidingTabLayout slidingTabLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +43,9 @@ public class MainActivity extends ActionBarActivity {
         titles = getResources().getStringArray(R.array.planets_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.navdra);
+
+
+
         pager = (ViewPager) findViewById(R.id.viewpager);
         slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
         toolbar = (Toolbar) findViewById(R.id.toolbar);

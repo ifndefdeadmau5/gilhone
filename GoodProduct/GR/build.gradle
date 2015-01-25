@@ -5,11 +5,11 @@ android {
     buildToolsVersion "21.1"
 
     defaultConfig {
-        applicationId "com.tekinarslan.material.sample"
+        applicationId "com.SeongMin.GoodProduct"
         minSdkVersion 16
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 11
+        versionName "1.1"
     }
     buildTypes {
         release {
